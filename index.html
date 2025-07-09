@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimodal AI Breast Cancer Diagnostic System</title>
+    <link rel="icon" href="/public/file.svg" />
+    <style>
+      body { font-family: Arial, sans-serif; margin: 2rem; }
+      header { margin-bottom: 2rem; }
+      input { padding: 0.25rem 0.5rem; }
+      ul { list-style: disc; padding-left: 1.5rem; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Multimodal AI Breast Cancer Diagnostic System</h1>
+    </header>
+    <div>
+      <label for="nameInput">Enter your name:</label>
+      <input id="nameInput" />
+      <p id="greeting"></p>
+    </div>
+    <section>
+      <h2>Key Features</h2>
+      <ul id="features"></ul>
+    </section>
+    <script>
+      const features = [
+        'Integration of mammography images and patient records',
+        'Deep neural network models for tumor classification',
+        'User-friendly interface for medical professionals'
+      ];
+      const list = document.getElementById('features');
+      features.forEach(f => {
+        const li = document.createElement('li');
+        li.textContent = f;
+        list.appendChild(li);
+      });
+      const input = document.getElementById('nameInput');
+      input.addEventListener('input', () => {
+        const name = input.value.trim();
+        const greeting = document.getElementById('greeting');
+        greeting.textContent = name ? `Hello, ${name}! Thanks for visiting.` : '';
+      });
+    </script>
+  </body>
+</html>
