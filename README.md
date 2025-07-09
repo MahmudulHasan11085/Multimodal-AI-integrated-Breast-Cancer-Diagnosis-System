@@ -1,6 +1,6 @@
 # Multimodal AI Integrated Breast Cancer Diagnosis System
 
-This repository contains a demo Next.js website for our project. The site lives in the `web` directory and can be run locally or deployed to Vercel.
+This repository contains a demo Next.js website for our project. The site lives in the `web` directory and can be run locally or deployed to Vercel. The demo includes a simple greeting form and a separate features page.
 
 ## Running Locally
 
